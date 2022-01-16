@@ -13,13 +13,19 @@
   margin: 20px;
   font-size: 1rem;
 }
+.gugudan {
+  display: inline-block;
+}
 #question {
   margin: 20px auto;
 }
 #question input {
   margin: 10px auto;
-  width: 20px;
+  width: 50px;
 }
 #question a {
   margin-left: 6px;
+}
+.multiply {
+  display: inline-block;
 }

@@ -5,27 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Gugudan</title>
+  <title>초등 수학</title>
 </head>
 <body>
   <div class="container">
     <div id="title"></div>
     <div id="date"></div>
-    <div id="choose"></div>
-    <select>
-      <option value="">단을 선택해주세요.</option>
-      <option value="2">2단</option>
-      <option value="3">3단</option>
-      <option value="4">4단</option>
-      <option value="5">5단</option>
-      <option value="6">6단</option>
-      <option value="7">7단</option>
-      <option value="8">8단</option>
-      <option value="9">9단</option>
-    </select>
-    <div id="question"></div>
-    <div id="check"></div>
+    <div class="gugudan">
+      <select>
+        <option value="">구구단</option>
+        <option value="2">2단</option>
+        <option value="3">3단</option>
+        <option value="4">4단</option>
+        <option value="5">5단</option>
+        <option value="6">6단</option>
+        <option value="7">7단</option>
+        <option value="8">8단</option>
+        <option value="9">9단</option>
+      </select>
+    </div>
+    <div class="multiply">
+      <select>
+        <option value="">자릿수 곱셈</option>
+        <option value="mul2">두 자리 + 한 자릿수</option>
+        <option value="mul3">세 자리 + 두 자릿수</option>
+      </select>
+    </div>
+    <div>
+      <div id="question"></div>
+      <div id="check"></div>
+    </div>
   </div>
+  <script src="./layout.js"></script>
   <script src="./gugudan.js"></script>
+  <script src="./multiply.js"></script>
 </body>
 </html>
