@@ -3,6 +3,8 @@ let dan;
 document.addEventListener('click', e => {
   const value = e.target.value;
   if(value > 1 && value <10) {
+    add = null;
+    sub = null;
     mul = null;
     dan = value;
     question.innerHTML = "";

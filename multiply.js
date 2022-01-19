@@ -1,10 +1,10 @@
 let mul;
-const random1 = [];
-const random2 = [];
 
 document.addEventListener('click', e => {
   const value = e.target.value;
   if(value == "mul2" || value == "mul3") {
+    add = null;
+    sub = null;
     dan = null;
     mul = value;
     question.innerHTML = "";
