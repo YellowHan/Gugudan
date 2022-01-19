@@ -14,43 +14,30 @@ document.getElementById("date").innerText = today;
 let num;
 document.addEventListener("click", (e) => {
   const value = e.target.value;
-  switch (value) {
-    case "add1":
-    case "add2":
+  if (String(value).includes("add")) {
       init();
       add(value);
       checkCreate();
-      break;
-    case "sub1":
-    case "sub2":
-      init();
-      sub(value);
-      checkCreate();
-      break;
-    case "dan2":
-    case "dan3":
-    case "dan4":
-    case "dan5":
-    case "dan6":
-    case "dan7":
-    case "dan8":
-    case "dan9":
-      init();
-      dan(value);
-      num = value[3];
-      checkCreate();
-      break;
-    case "mul2":
-    case "mul3":
-      init();
-      mul(value);
-      checkCreate();
-      break;
-    case "정답체크":
-      const answer = document.querySelector("#question input").id;
-      show(answer, num);
-    default:
-      return;
+  }
+  if (String(value).includes("sub")) {
+    init();
+    sub(value);
+    checkCreate();
+  }
+  if (String(value).includes("dan")) {
+    init();
+    dan(value);
+    num = value[3];
+    checkCreate();
+  }
+  if (String(value).includes("mul")) {
+    init();
+    mul(value);
+    checkCreate();
+  }
+  if(value == "정답체크") {
+    const answer = document.querySelector("#question input").id;
+    show(answer, num);
   }
 });
 
